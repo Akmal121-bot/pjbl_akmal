@@ -3,8 +3,8 @@ showErrorDetails = false
 toolbarMode = "minimal"
 
 [theme]
-primaryColor = "#D4AF37"
-backgroundColor = "#050505"
-secondaryBackgroundColor = "#121212"
-textColor = "#FFFFFF"
+primaryColor = "#2563EB"
+backgroundColor = "#030712"
+secondaryBackgroundColor = "#111827"
+textColor = "#F9FAFB"
 font = "sans serif"
