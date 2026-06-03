@@ -27,11 +27,7 @@ match pilihan:
             luas = sisi * sisi
             keliling = 4 * sisi
             st.snow()
-            
-            # OUTPUT BARU: Menggunakan komponen Metric berdampingan
-            c1, c2 = st.columns(2)
-            c1.metric(label="📐 Luas Persegi", value=f"{luas:.2f}", border=True)
-            c2.metric(label="🏃‍♂️ Keliling Persegi", value=f"{keliling:.2f}", border=True)
+            st.info(f"📐 Luas Persegi: {luas:.2f} \n\n 🏃‍♂️ Keliling Persegi: {keliling:.2f}")
                 
     case "persegi panjang":
         st.title("persegi panjang")
@@ -43,11 +39,7 @@ match pilihan:
             luas = panjang * lebar
             keliling = 2 * (panjang + lebar)
             st.snow()
-            
-            # OUTPUT BARU
-            c1, c2 = st.columns(2)
-            c1.metric(label="📐 Luas Persegi Panjang", value=f"{luas:.2f}", border=True)
-            c2.metric(label="🏃‍♂️ Keliling Persegi Panjang", value=f"{keliling:.2f}", border=True)
+            st.info(f"📐 Luas Persegi Panjang: {luas:.2f} \n\n 🏃‍♂️ Keliling Persegi Panjang: {keliling:.2f}")
             
     case "lingkaran":
         st.title("lingkaran")
@@ -58,11 +50,7 @@ match pilihan:
             luas = 3.14 * jari_jari * jari_jari
             keliling = 2 * 3.14 * jari_jari
             st.snow()
-            
-            # OUTPUT BARU
-            c1, c2 = st.columns(2)
-            c1.metric(label="📐 Luas Lingkaran", value=f"{luas:.2f}", border=True)
-            c2.metric(label="🏃‍♂️ Keliling Lingkaran", value=f"{keliling:.2f}", border=True)
+            st.info(f"📐 Luas Lingkaran: {luas:.2f} \n\n 🏃‍♂️ Keliling Lingkaran: {keliling:.2f}")
 
     case "segitiga":
         st.title("segitiga")
@@ -77,11 +65,7 @@ match pilihan:
             luas = 0.5 * alas * tinggi
             keliling = sisi_a + sisi_b + sisi_c
             st.snow()
-            
-            # OUTPUT BARU
-            c1, c2 = st.columns(2)
-            c1.metric(label="📐 Luas Segitiga", value=f"{luas:.2f}", border=True)
-            c2.metric(label="🏃‍♂️ Keliling Segitiga", value=f"{keliling:.2f}", border=True)
+            st.info(f"📐 Luas Segitiga: {luas:.2f} \n\n 🏃‍♂️ Keliling Segitiga: {keliling:.2f}")
 
     case "trapesium":
         st.title("trapesium")
@@ -96,11 +80,7 @@ match pilihan:
             luas = 0.5 * (sisi_atas + sisi_bawah) * tinggi_trap
             keliling = sisi_atas + sisi_bawah + sisi_miring1 + sisi_miring2
             st.snow()
-            
-            # OUTPUT BARU
-            c1, c2 = st.columns(2)
-            c1.metric(label="📐 Luas Trapesium", value=f"{luas:.2f}", border=True)
-            c2.metric(label="🏃‍♂️ Keliling Trapesium", value=f"{keliling:.2f}", border=True)
+            st.info(f"📐 Luas Trapesium: {luas:.2f} \n\n 🏃‍♂️ Keliling Trapesium: {keliling:.2f}")
 
     case _:
         st.error("terjadi kesalahan")
