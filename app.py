@@ -9,7 +9,6 @@ with st.sidebar:
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
-        # Pastikan file "geometri.png" berada di folder yang sama
         st.image("akmal.png")
         
     st.title("Baangun Datar")
